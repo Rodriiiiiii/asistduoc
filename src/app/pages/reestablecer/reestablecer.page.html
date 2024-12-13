@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/alumnoprincipal"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card class="reset-card">
+    <ion-card-header>
+      <ion-card-title class="title">Restablecer Contraseña</ion-card-title>
+      <ion-card-subtitle class="subtitle">Olvidaste tu Contraseña? Ingresa tu correo para restablecerla.</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <!-- Formulario de correo electrónico -->
+      <ion-list>
+        <ion-item lines="full">
+          <ion-input
+            labelPlacement="floating"
+            [(ngModel)]="email"
+            type="email"
+            required
+            placeholder="Correo Electrónico"
+            clearInput
+          >
+            <div slot="label">Correo Electrónico</div>
+          </ion-input>
+        </ion-item>
+      </ion-list>
+
+      <!-- Botón para enviar enlace -->
+      <div class="button-container">
+        <ion-button
+          expand="block"
+          shape="round"
+          color="dark"
+          (click)="sendResetLink()"
+        >
+        Restablecer Contraseña
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

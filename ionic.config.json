@@ -1,0 +1,8 @@
+{
+  "name": "AsisDuoc",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
